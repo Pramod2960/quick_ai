@@ -14,10 +14,8 @@ function App() {
   return (
     <div>
       <Routes>
-        {/* single route */}
         <Route path="/" element={<Home />} />
 
-        {/* Nested routes */}
         <Route path="/ai" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="write-article" element={<WriteArticle />} />
